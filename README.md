@@ -1,1 +1,1 @@
-"# Spiking-neuronal-dynamics-impact-rich-lazy-learning-regime" 
+"Spiking-neuronal-dynamics-impact-rich-lazy-learning-regime" 
