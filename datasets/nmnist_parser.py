@@ -27,9 +27,6 @@ class DVSSpikeTrain(np.recarray):
         self.time_scale = getattr(obj, "time_scale", None)
 
 def readAERFile(filename: str) -> DVSSpikeTrain:
-    """Function adapted from https://github.com/gorchard/event-Python/blob/master/eventvision.py
-    for reading AER files from N-MNIST and N-Caltech 101
-    """
 
     raw_data = np.fromfile(filename, dtype=np.uint8).astype(np.uint32)
     # print(f"J: {raw_data.shape}")

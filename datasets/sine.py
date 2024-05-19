@@ -69,30 +69,6 @@ def create_sine_dataset(
     return tud.TensorDataset(torch.tensor(inputs).float(), torch.tensor(targets).float())
 
 def create_sines_amp(sim_time, dt, amp, noise_mean, noise_std, freqs, **kwargs):
-    """
-    Create a dataset of different frequency sinusoids adapted  and simplified from
-    (David Sussillo, Omri Barak, 2013) pattern generation task
-    Parameters
-    ----------
-    sim_time : float
-        number of ms of total simulation time
-    dt : float
-        number of ms in each timestep
-    amp : float
-        amplitude of the sinusoid
-    noise_mean : float
-        mean of noise added to sinusoid
-    noise_std : float
-        std of noise added to sinusoid
-    freqs : List
-        list of frequencies (1/ms or kHz) of sinusoids
-    Returns
-    -------
-    Numpy Array(nsteps, len(freqs))
-        input sequences (all 1-D)
-    Numpy Arryay(nsteps, len(freqs))
-        target sequences (all 1-D)
-    """
     n = len(freqs)
     nsteps = int(sim_time / dt)
     time = np.arange(start = 0, stop = sim_time, step = dt)

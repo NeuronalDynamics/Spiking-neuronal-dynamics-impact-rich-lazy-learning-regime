@@ -122,8 +122,6 @@ def calculateLEs(model, k, num_steps=1000):
     LEs = torch.mean(rvals, dim=0)
     return LEs.numpy()
 
-# Assume `calculateLEs` function call and model setup remains as previously defined
-
 
 
 
@@ -331,7 +329,6 @@ def calculateLEs(model, k, num_steps=1000):
     return sorted_LEs
 '''
 
-#(env) C:\Users\qiant\Desktop\Research\GLIFS_ASC-main\test\test>python LE_test.py
 #Calculated Lyapunov Exponents: [ 0.69209719 -0.69209719]
 #Analytical Lyapunov Exponents: [-0.69314718  0.69314718]
 #Analytical Lyapunov Exponents: tensor([-0.6931,  0.6931], dtype=torch.float64)

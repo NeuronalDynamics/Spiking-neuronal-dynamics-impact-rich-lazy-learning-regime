@@ -1,7 +1,5 @@
 # Task setup
-nmnist_path: /home/chloewin/N-MNIST
-#/gscratch/deepthought/chloewin/N-MNIST
-#/home/chloewin/468j46mzdv-1/
+
 num_timesteps: 15
 duration_timestep: 1
 
