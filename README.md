@@ -1,1 +1,1 @@
-"Spiking-neuronal-dynamics-impact-rich-lazy-learning-regime" 
+Code Submission for Paper "How spiking vs rate dynamics in neural networks impact rich vs lazy learning regimes" 
